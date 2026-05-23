@@ -1,7 +1,47 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 from queue import PriorityQueue
 def a_star(graph, heuristic, start, goal):
     pq = PriorityQueue()
-    pq.put((0 + heuristic[start], 0, start, [start]))
+    pq.put((0 + heuristic[start], 0, start, [start])) #f, g, node, path
     visited = set()
     while not pq.empty():
         f, g, node, path = pq.get()
@@ -39,3 +79,5 @@ goal = 'G'
 path, cost = a_star(graph, heuristic, start, goal)
 print("Optimal Path:", path)
 print("Total Cost:", cost)
+
+

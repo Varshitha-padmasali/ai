@@ -1,7 +1,46 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 from queue import PriorityQueue
 def uniform_cost_search(graph, start, goal):
     pq = PriorityQueue()
-    pq.put((0, start, [start]))
+    pq.put((0, start, [start])) #cost,current node,path
     visited = set()
     while not pq.empty():
         cost, node, path = pq.get()

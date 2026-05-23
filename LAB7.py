@@ -1,3 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 from queue import PriorityQueue
 def best_first_search(graph, heuristic, start, goal):
     pq = PriorityQueue()

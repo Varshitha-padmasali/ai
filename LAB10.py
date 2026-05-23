@@ -1,3 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 def resolve(clause1, clause2):
     resolved = []
     for literal in clause1:
@@ -40,3 +82,5 @@ if resolution(knowledge_base, query):
     print("Query can be proved using Resolution")
 else:
     print("Query cannot be proved")
+
+

@@ -1,6 +1,5 @@
-# Program to perform Breadth First Search (BFS)
-from collections import deque
 # BFS function
+from collections import deque
 def bfs(graph, start):
     visited = set()
     queue = deque()

@@ -1,15 +1,10 @@
-# Program to solve n-Puzzle Problem using A* Search
-# Example: 8-Puzzle (3x3)
 import heapq
-# Goal State
 goal_state = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 0]
 ]
-# Directions: Up, Down, Left, Right
 moves = [(-1, 0), (1, 0), (0, -1), (0, 1)]
-# Heuristic: Number of misplaced tiles
 def heuristic(state):
     count = 0
     for i in range(3):
@@ -17,7 +12,6 @@ def heuristic(state):
             if state[i][j] != 0 and state[i][j] != goal_state[i][j]:
                 count += 1
     return count
-# Find blank tile position
 def find_blank(state):
     for i in range(3):
         for j in range(3):

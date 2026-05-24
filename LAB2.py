@@ -17,7 +17,6 @@ def find_blank(state):
         for j in range(3):
             if state[i][j] == 0:
                 return i, j
-# Convert list to tuple for hashing
 def to_tuple(state):
     return tuple(tuple(row) for row in state)
 # Generate next states
